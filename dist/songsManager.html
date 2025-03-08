@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width,inital-scale=1.0">
+        <title>Song Managment</title>
+    </head>
+
+    <body>
+        <h1>Songs Manager </h1> 
+        <h2>Add Songs</h2>
+        <form id="addSong">
+             <input type="text" id = "titleInput" placeholder="Enter Title"><br><br>
+             <input type="text" id = "artistInput" placeholder="Enter Artist"><br><br>
+             <input type="number" id = "yearInput" placeholder="Enter Year "><br><br>
+             <input type="number" id = "ratingInput" placeholder="Enter Rating "><br><br>
+             <input type="submit" value = "Save Song">
+         </form>
+
+         <div id="pleaseWork"></div>
+     </body>
+
+     <h2>Delete Song</h2>
+     <form id="deleteSong">
+         <input type="text" id = "deleteInput" placeholder="Enter Title"><br><br>
+         <input type="submit" value = "Delete">
+     </form>
+
+     <h2>Song List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Song ID</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script src="songsmanager.bundle.js"></script>
+</html>
